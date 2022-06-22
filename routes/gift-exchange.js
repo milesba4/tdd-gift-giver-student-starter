@@ -1,6 +1,8 @@
 const express = require("express")
 
+const GiftExchange = require("../models/gift-exchange")
 const router = express.Router();
+
 const names = ["me", "you", "them", "us", "her", "him", "they", "y'all"]
 
 router.post("/:tuples", async(req, res) => {
